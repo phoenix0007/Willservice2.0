@@ -88,3 +88,17 @@
         z-index: 5; /* Ensures other content is clickable */
     }
 }
+@media (max-width: 768px) {
+    .get-started-button {
+        position: relative !important;
+        display: inline-block !important;
+        width: auto !important;
+        height: auto !important;
+        z-index: 10 !important;
+    }
+
+    .hero {
+        position: relative;
+        z-index: 1;
+    }
+}
