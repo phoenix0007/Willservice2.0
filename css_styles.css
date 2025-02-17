@@ -1,50 +1,84 @@
-/* Global Styles */
+/* Updated :root variables */
 :root {
-    --primary-color: #007bff; /* Blue */
-    --accent-color: #ffa500;  /* Orange */
-    --text-color: #000;      /* Black - for text */
-    --white-color: #fff;      /* White - for backgrounds */
-    --background-color: #f8f9fa; /* Light Gray/Very Light White for body background */
-    --dark-color: #343a40;     /* Dark Gray/Black - for Footer, potentially other accents */
+    --primary-blue: #007bff;       /* Main blue */
+    --secondary-blue: #0056b3;     /* Darker blue */
+    --light-blue: #e6f0ff;         /* Very light blue */
+    --white-color: #ffffff;        /* Pure white */
+    --text-color: #000000;         /* Black text */
+    --background-color: #f8f9fa;   /* Light gray/white */
     --font-family: 'Roboto', sans-serif;
 }
 
+/* Apply new color scheme throughout */
 body {
-    font-family: var(--font-family);
+    background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color); /* Light White/Gray body background */
-    line-height: 1.6;
 }
 
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography */
+.nav-links li a.active,
+.nav-links li a:hover {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+}
+
+.cta-button {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+.service-item {
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-blue);
+}
+
+.testimonial-item {
+    background-color: var(--white-color);
+    border: 1px solid var(--light-blue);
+}
+
+footer {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+}
+
+/* Updated specific components */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('https://source.unsplash.com/1600x900/?technology,blue') center/cover;
+}
+
+.service-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.contact-info i {
+    color: var(--primary-blue);
+}
+
+.social-links a:hover {
+    color: var(--secondary-blue);
+}
+
+/* Add blue accents */
 h1, h2, h3 {
-    color: var(--primary-color); /* Blue Headings */
-    margin-top: 0;
-    margin-bottom: 20px;
+    color: var(--primary-blue);
 }
-
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-p { margin-bottom: 15px; }
 
 a {
-    color: var(--primary-color); /* Blue Links */
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--secondary-blue);
 }
 
 a:hover {
-    color: var(--accent-color); /* Orange Hover */
+    color: var(--primary-blue);
 }
 
 /* Navbar */
