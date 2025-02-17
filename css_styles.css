@@ -391,3 +391,23 @@ footer .social-links a:hover {
 .service-content {
     padding: 25px;
 }
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hero-illustration {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-illustration {
+        max-width: 300px;
+    }
+}
