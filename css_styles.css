@@ -445,3 +445,107 @@ footer .social-links a:hover {
         max-width: 300px;
     }
 }
+/* Updated :root variables */
+:root {
+    --primary-blue: #007bff;       /* Main blue */
+    --secondary-blue: #0056b3;     /* Darker blue */
+    --light-blue: #e6f0ff;         /* Very light blue */
+    --white-color: #ffffff;        /* Pure white */
+    --text-color: #000000;         /* Black text */
+    --transparent: transparent;    /* Transparent background */
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Apply transparent backgrounds */
+body {
+    background-color: var(--transparent);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--transparent);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+}
+
+.cta-button {
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+    border: 2px solid var(--primary-blue);
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+}
+
+.service-item {
+    background-color: var(--transparent);
+    border: 2px solid var(--primary-blue);
+}
+
+.testimonial-item {
+    background-color: var(--transparent);
+    border: 2px solid var(--light-blue);
+}
+
+footer {
+    background-color: var(--transparent);
+    color: var(--text-color);
+    border-top: 2px solid var(--primary-blue);
+}
+
+/* Updated specific components */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                url('https://source.unsplash.com/1600x900/?technology,blue') center/cover;
+}
+
+.service-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.contact-info i {
+    color: var(--primary-blue);
+}
+
+.social-links a:hover {
+    color: var(--secondary-blue);
+}
+
+/* Add blue accents */
+h1, h2, h3 {
+    color: var(--primary-blue);
+}
+
+a {
+    color: var(--secondary-blue);
+}
+
+a:hover {
+    color: var(--primary-blue);
+}
+
+/* Ensure content sections are readable */
+.container {
+    background-color: var(--transparent);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Add subtle white backgrounds for readability */
+.hero-content,
+.about-section,
+.services-section,
+.testimonials-section,
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
