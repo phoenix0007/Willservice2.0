@@ -96,26 +96,23 @@ a:hover {
     color: var(--text-color); /* Black Burger Icon */
 }
 
-/* Hero Section with Background Image */
+/* Hero Section */
 .hero {
     position: relative;
-    background-color: var(--background-color); /* Light White/Gray Hero Section Background */
     padding: 150px 0;
     text-align: center;
     overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
+                url('https://images.unsplash.com/photo-1519389958573-ff703188ebf4') center/cover;
 }
 
 .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1519389958573-ff703188ebf4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVjaG5vbG9neXx8fHx8fDE2OTg4Mzk4ODU&ixlib=rb-4.0.3&q=80&w=1600'); /* Unsplash Image Link - Technology Theme */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.7;
-    z-index: -1;
+    display: none; /* Remove the extra background div */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 /* Unsplash Link for the background image: https://unsplash.com/photos/man-using-laptop-on-table-SYTO3xs06fU */
 
