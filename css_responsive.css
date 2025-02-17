@@ -102,3 +102,28 @@
         z-index: 1;
     }
 }
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px; /* Reduce vertical padding */
+        min-height: auto;
+    }
+
+    .hero-content {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    /* Fix mobile menu positioning */
+    .nav-links {
+        top: 60px; /* Match navbar height */
+    }
+}
